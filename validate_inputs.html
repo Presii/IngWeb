@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form dummy</title>
+    <style>
+        input:invalid 
+        {
+            border: 1px solid red;
+        }
+
+        input:valid 
+        {
+            border: 1px solid #005599;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <label for="n1">How old are you?</label>
+            <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+        </p>
+        <input name="name" type="search" maxlength="5" minlenght="0" placeholder="type to search (max=5)" required/>
+        <input name="email" type="email" required/>
+        <input name="date" type="date" required/>
+        <input name="url" type="url" placeholder="type a url" required/>
+        <input name="color" type="color"/> 
+        <input type="submit" value="Send me and try" />
+    </form>
+</body>
+</html>

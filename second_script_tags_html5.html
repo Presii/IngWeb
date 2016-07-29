@@ -1,0 +1,41 @@
+<div>
+  <nav role="navigation">
+        <ul>
+          <li>
+            <a href="#text">Text</a>
+            <ul>
+              <li><a href="#text__headings">Headings</a></li>
+              <li><a href="#text__paragraphs">Paragraphs</a></li>
+              <li><a href="#text__blockquotes">Blockquotes</a></li>
+              <li><a href="#text__lists">Lists</a></li>
+              <li><a href="#text__hr">Horizontal rules</a></li>
+              <li><a href="#text__tables">Tabular data</a></li>
+              <li><a href="#text__code">Code</a></li>
+              <li><a href="#text__inline">Inline elements</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#embedded">Embedded content</a>
+            <ul>
+              <li><a href="#embedded__images">Images</a></li>
+              <li><a href="#embedded__audio">Audio</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header>   
+        <h1>This is a sample of canvas</h1>
+    </header>
+     <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas> 
+<script> 
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke(); </script>
+</body>
+</html>
